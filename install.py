@@ -33,6 +33,11 @@ utax
 xerox
 """
 
+brands = {
+    "brother": ["","","",""],
+    "canon": []
+}
+
 def donwload(url):
     tmp1 = temp.NamedTemporaryFile(delete=False)
     shutil.copyfileobj(req.urlopen(url),tmp1)
@@ -40,7 +45,8 @@ def donwload(url):
 def install(brand):
     match brand:
         case "brother":
-            download(baseURL+)
+            for fn in brands["brother"]:
+                download(baseURL+"Brother/"+fn)
             break
         case "canon":
             break
