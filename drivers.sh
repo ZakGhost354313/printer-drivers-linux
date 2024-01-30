@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 install_all() {
-	echo "test"
+	/usr/bin/python install.py all
 }
 driver_help() {
 	. ./driver_help.sh
